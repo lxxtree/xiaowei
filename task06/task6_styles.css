@@ -1,0 +1,417 @@
+body{
+    font-size:12px;
+    font-family:"微软雅黑","黑体", "宋体","楷体";
+    background:grey;
+    margin:0;
+    padding:0;
+
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+#container{
+    width:81.6667em;  /* 980px/12px */
+    height:115.5em;  /* 1386px/12px */
+    margin:0 auto;
+    background: white;
+}
+
+#mainbox{
+    width:74.3333em;  /* 892px/12px */
+    height:100%;
+    margin:0 auto;
+}
+
+header{
+    display:flex;
+    -webkit-justify-content:space-between ;
+    justify-content:space-between;
+    border-bottom:0.1667em solid #938e8c;   /* 2px/12px */
+}
+/*ife.baidu.com链接*/
+ header .nav{
+    width:9.1667em;  /* 110px/12px */
+     padding-top:3.75em;  /* 45px/12px */
+    font-family:"黑体";
+    background: #d45d5c;
+    text-align:center;
+}
+
+ header .nav a{
+     color:white;
+     text-decoration:none;
+ }
+
+/*日期2016.3*/
+header .H_date{
+    color:#d45d5c;
+    font-family:"黑体";
+    padding-top:3.75em;  /* 45px/12px */
+
+}
+
+.one{
+    display: flex;
+    justify-content:space-between;
+    -webkit-justify-content: space-between;
+    margin-top: 3em; /* 36px/12px */
+}
+/*左上图设置*/
+.one_image{
+    background:url(images/left_top.png);
+    width:53.4167em;  /*641px/12px*/
+    height:25.0833em;  /*301px/12px*/
+}
+/*红绿遮罩宽高*/
+.one_image div{
+    width:15.9167em;  /*191px/12px=15.9167em*/
+    height:25.0833em; /*301px/12px=25.0833em*/
+}
+
+/*绿遮罩*/
+.one_image .left{
+    background:rgba(51, 153, 102, .5);  /* #339966 */
+}
+
+/*红遮罩*/
+.one_image .right{
+    background:rgba(204, 102, 153, .5); /* #cc6699 */
+}
+
+.one_aside{
+    width:16.9167em; /* 203px/12px */
+    border-top: 0.1667em solid #cc8091;   /* 2px/12px */
+    padding-top:0.6em; /*7.2px/12px */
+}
+
+/*About Technologe小型大写字设置*/
+.oa_p1{
+    font-size:2em;  /* 24px/12px */
+    color:black;
+    font-family: "微软雅黑";
+    text-decoration:underline;
+    font-variant:small-caps;
+}
+
+/*About Technologe小号字设置*/
+.oa_p2{
+    font-family:"楷体";
+    font-height:0.8333em; /* 10px/12px */
+}
+
+/*700数字设置*/
+.oa_p3{
+    color:#75b86b;
+    font:italic 9.6667em "微软雅黑" ;   /* 116px/12px */
+}
+
+/*3.2数字设置*/
+.oa_div_1{
+    display:inline-block;
+    font:4.5833em "微软雅黑" ;    /* 55px/12px */
+    color:#cc8091;
+}
+
+.oa_div_2{
+    display:inline-block;
+}
+
+/*css大号字设置*/
+.oa_div_2_1{
+    font:1.75em "微软雅黑";   /* 21px/12px */
+    color:#cc8091;
+}
+
+/*css小号字设置*/
+.oa_div_2_2{
+    font-family:"微软雅黑";
+    color:#cc8091;
+}
+/* What、When、How的article*/
+.two{
+    display: flex;
+    justify-content:flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.two_2,.two_3{
+    margin-left:3em; /* 36px/12px */
+}
+/* What */
+.two_1 h3{
+    font:bold 1.3333em "微软雅黑";  /* 16px/12px */
+    color:#418c59;
+    text-decoration:underline;
+}
+/* What下的文本 */
+.two_1 p{
+    width:19em; /* 19*12px/12px */
+    font-family: "宋体";
+    color:#767777;
+    line-height:1.3333em;   /* 16px/12px */
+}
+
+/* When */
+.two_2 h3{
+    font:bold 1.3333em "微软雅黑";    /* 16px/12px */
+    color:#d2994f;
+    text-decoration:underline;
+}
+
+/* When下的文本 */
+.two_2 p{
+    width:17em;    /* 17*12px/12px */
+    font-family: "微软雅黑";
+    color:#231815;
+    opacity: .7;
+    line-height:1.3333em;   /* 16px/12px */
+}
+
+/* How */
+.two_3 h3{
+    font:bold 1.3333em "微软雅黑";   /* 16px/12px */
+    color:#cc7680;
+    text-decoration:underline;
+}
+
+/* How下的文本 */
+.two_3 p{
+    width:11em;   /* 11*12px/12px */
+    font:1em/1.3333em "微软雅黑";  /* 继承父元素的字体大小12px，1em=12px ，font-size:1em，font-height:16/12=1.3333em*/
+    color:#231815;
+    opacity: .7;
+}
+
+/* How下的文本百分数部分 */
+.two_3 span{
+    font:italic 1em/1.3333em "微软雅黑";  /* 继承父元素的字体大小12px，1em=12px ，font-size:1em，font-height:16/12=1.3333em*/
+    color:#cd4a48;
+    opacity:.7;
+}
+
+/* 最下面的一大块设置，
+   最下面的一大块再分为2块，分别是类名为“three”和“four”的article */
+section{
+    display:flex;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+    margin:3em auto;  /* 继承父元素的字体大小12px，1em=12px ，margin:36px/12px=3em*/
+
+}
+
+.three{
+    width:34.5833em;  /* 415px/12px */
+}
+
+/* “THE TECHNOLOGE OF FRONT”字设置 */
+.three .d1{
+    font:bold 3.5em "黑体" ;  /* font-size:42px/12px */
+    color:#11456b;
+}
+/* “THE”字设置 */
+.three .d1 span{
+    font:italic bold 1.7143em "黑体"; /* 因父元素字体大小是42px， 子元素font-size为： 72px/42px = 1.7143em */
+    color:#f5e327;
+}
+
+/* “前端技术领域”字设置 */
+.three .d2{
+    font:bold 2.75em "黑体";  /* 33px/12px */
+    color:#11456b;
+}
+
+/* “前端技术领域”字下的 段落设置 */
+.three p{
+    text-indent: 2em; /* 24px/12px = 2em*/
+    font:1em/1.3333em "宋体"; /* 继承父元素的字体大小12px，1em=12px ，font-size:1em，font-height:16/12=1.3333em*/
+    color:#767777;
+    margin:0;
+}
+
+/* “前端技术领域”字下的第一个段落设置 */
+.three p .p1{
+    border-top:0.1667em solid #11456b;  /* 2px/12px */
+    padding-top:2em;  /* 24px/12px = 2em*/
+    text-indent:0;
+}
+
+/* “前端技术领域”字下的第一个段落的第一个字“前”设置 */
+.three p strong{
+    float:left;
+    font:5.8333em "微软雅黑";  /* 70px/12px */
+    color:#f5e327;
+    margin-right:.1714em;  /* 12px/70px，其父元素字体大小为70px */
+}
+
+/* “前端技术领域”字下第一个段落里的图片设置 */
+.three img{
+    float:right;
+    margin:1em;  /* 继承父元素的字体大小12px，1em=12px */
+}
+
+.four{
+    width:38.1667em;    /* 458px/12px */
+
+}
+
+/*右边中间的带有“前端技术”的图设置*/
+.four_image{
+    display:flex;
+    -webkit-align-items:flex-end ;
+    align-items: flex-end;
+    width:38.1667em;    /* 458px/12px */
+    height:21.4167em;   /* 257px/12px */
+    background:url(images/right_center.png);
+}
+
+/*右边中间图上的灰色遮罩设置*/
+.four .graybar{
+    display:flex;
+    -webkit-align-items:center;
+    align-items: center;
+    width:38.1667em;      /* 458px/12px */
+    height:5.0833em;     /* 61px/12px */
+    background:rgba(0,0,0, .4);
+    color:white;
+    padding-left:3em;   /* 36px/12px */
+}
+
+/*灰色遮罩上的文字设置*/
+.four .graybar p{
+    height:3.6667em;   /* 44px/12px */
+    border-left:0.25em solid #72b16a;   /* 3px/12px */
+    padding-left:1em;  /* 继承父元素的字体大小12px，1em=12px */
+}
+
+/*灰色遮罩上的大字“前端技术”设置*/
+.four .graybar .sp1{
+    font:2.1667em "微软雅黑"; /* font-size:26px/12px，sp1里后面以26px为1em，1em=26px */
+    color:#fff;
+}
+
+/*灰色遮罩上的小字“前端技术前端技术”设置*/
+.four .graybar .sp2{
+    font: italic 1em "微软雅黑";  /* 继承父元素的字体大小12px，1em=12px */
+    word-spacing: 140%;
+    color:#72b16a;
+    margin-left:1em;  /* 继承父元素的字体大小12px，1em=12px */
+}
+
+/*右下浅黄色区块设置*/
+.four_text{
+    background:#ffffcc;
+    width:38.25em;       /* 459px/12px */
+    height:26.5em;      /* 318px/12px */
+    margin-top:3em;    /* 36px/12px */
+}
+
+/*右下浅黄色区域里的段落文本块设置*/
+.four_text_p{
+    padding:1em 2em;  /* 继承父元素的字体大小12px，1em=12px */
+
+}
+
+/*右下浅黄色区域里段落文本块的段落“前端前端前端前端前端前端…………………………前端”设置*/
+.four_text_p  p{
+    font: 1.3333em/1.25em "宋体";  /* font-size:16px/12px = 1.3333em，font-height:20px/16px = 1.25em */
+    color:#5a5b5b;
+}
+
+/*“前端前端前端前端前端前端…………………………前端”省略号前面部分的文字设置*/
+.four_text_p p .shap{
+    margin:0.1875em;  /* 父元素font-size:16px，margin:3px/16px = 0.1875em */
+    border-left: 0.3125em solid transparent;   /* 父元素font-size:16px，border-left:5px/16px = 0.3125em */
+    border-right:0.3125em solid transparent;   /* 父元素font-size:16px，border-right:5px/16px = 0.3125em */
+    border-bottom: 0.625em solid #10456b;    /* 父元素font-size:16px，border-bottom:10px/16px = 0.625em */
+}
+
+/*“前端前端前端前端前端前端…………………………前端”省略号后面部分的文字设置*/
+.four_text_p p .text{
+    font: italic 0.75em "宋体";  /* 父元素font-size:16px，text的font-size:12px/16px = 0.75em */
+    color:#5a5b5b;
+}
+
+/*右下浅黄色区域里最下方的卡片和引言设置*/
+.four_text_complex{
+    display:flex;
+    justify-content:flex-start;
+    -webkit-justify-content:flex-start;
+    margin-top:1em;    /* 继承父元素的字体大小12px，1em=12px */
+}
+
+/*右下浅黄色区域里最下方的“卡片”设置*/
+.card{
+    display:flex;
+    justify-content:space-around;
+    -webkit-justify-content:space-around;
+    -webkit-align-items: center;
+    align-items:center;
+    background:#d45d5c;
+    width:21.6667em;    /* 260px/12px */
+    height:13.3333em;    /* 160px/12px */
+
+}
+
+.card_1{
+    font:9.1667em "微软雅黑";   /* 110px/12px */
+    color:#fff;
+
+}
+
+.card_2{
+    height:7.1667em;  /* 86px/12px */
+    color:#fff;
+    border-left:0.1667em solid #fff;  /* 2px/12px */
+    padding-left:0.6em;   /* 7.2px/12px */
+    padding-right:1em;     /* 继承父元素的字体大小12px，1em=12px */
+
+}
+
+.card_2 .upper{
+    font:italic 1.75em "黑体";   /* 21px/12px */
+
+}
+
+.card_2 .lower{
+    font: 1em "黑体";   /* 继承父元素的字体大小12px，1em=12px */
+}
+
+/*右下浅黄色区域里最下方的“引言”设置*/
+.quote{
+    width:14.1667em;    /* 170px/12px */
+    margin-left:1em;   /* 继承父元素的字体大小12px，1em=12px */
+}
+
+/* 引言里的文字设置*/
+.quote p{
+   font:italic 1.1667em/1.1429em "黑体";   /* font-size:14px/12px = 1.1667em，font-height:16px/14px = 1.1429em */
+    color:#5a5b5b;
+}
+
+/* 引言里的“引号”设置，此部分设置不成功，以后需要完善*/
+.quote p span{
+    font:5.1429em "黑体";    /* 72px/14px，父元素大小为14px */
+    color:#d45d5c;
+}
+
+.quote p .left{
+    margin-left:-0.5em;  /* -36px/72px，父元素大小为72px */
+    margin-bottom:-0.9em;   /* -64.8px/72px，父元素大小为72px */
+}
+
+/*页脚设置*/
+footer{
+    width:74.3333em;   /* 892px/12px */
+    height:12em;        /* 144px/12px */
+    border-top:1px solid #938e8c;
+    text-align: right;
+    color:#d45d5c;
+    font:1em "黑体";   /* 继承父元素的字体大小12px，1em=12px */
+
+}
