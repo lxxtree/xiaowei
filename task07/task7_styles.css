@@ -1,0 +1,758 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+
+}
+
+#container{
+    min-width:80em;   /*1280px/16px  */
+}
+/* 页头*/
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:1em 3.5em 0.75em 3.5em;  /* 1em=16px  */
+}
+
+.header_title{
+    font:1.3125em "黑体";   /*21px/16px  */
+    color:#333;
+}
+
+.header_title span{
+    margin-left:0.4762em;  /*10px/21px  */
+    vertical-align: top;
+    line-height:1.5714em;  /*33px/21px  */
+}
+
+header nav{
+    display:flex;
+    justify-content:space-between;
+}
+
+header nav ul{
+    padding:0;
+    margin:0;
+}
+
+header nav ul li{
+    float:left;
+    list-style: none;
+}
+
+header nav ul a{
+    font:0.875em "微软雅黑";    /*14px/16px  */
+    color:#333;
+    padding:0 1em 1.8926em 1.75em;  /* 1.8926em = 26.5px/14px； 1.75em = 24.5px/14px  */
+    text-decoration:none;
+}
+
+header nav ul a:hover{
+    color:#ff6666;
+    border-bottom:0.25em solid #ff6666;   /*3px/16px  */
+}
+
+header .login {
+    margin-top:0.25em;   /* 4px/16px  */
+}
+
+header .login a{
+    font: bold 0.875em "微软雅黑" ;    /*14px/16px  */
+    color:#ff6666;
+    margin-left:1em;
+    text-decoration:none;
+}
+
+header .login span{
+    padding-left:0.625em;     /*10px/16px  */
+    vertical-align:top;
+
+}
+
+header .login a:hover{
+    color:deepskyblue;
+    text-decoration: underline;
+}
+
+main{
+    margin-top:0;
+}
+
+/* Time of new life区块 */
+.one{
+    background:url(images/图一.png) no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:43.1875em;      /*691px/16px*/
+    margin-top:0;
+
+}
+
+.one_mask{
+    background:url(images/图一遮罩.png);
+    width:100%;
+    height:43.1875em;     /*691px/16px*/
+}
+
+.one_box{
+    margin-left:7.5em;  /*120px/16px*/
+    padding-top:14.375em;
+}
+
+.one_box_d1{
+    color:white;
+    font:3.75em "微软雅黑";
+    margin-top:0;
+}
+
+.one_box_d2{
+    color:white;
+    font:1.3225em "微软雅黑";   /* 1.3225em = 21px/16px;1em = 16px; */
+    margin-top:0.375em;  /*6px/16px*/
+    padding-left:0.375em;   /*6px/16px*/
+}
+
+.one_box button{
+    font:1.875em "微软雅黑";    /*30px/16px*/
+    background-color:#ff6666;
+    color:#fff;
+    width:11em;   /*330px/30px*/
+    height:2.2em;   /*66px/16px*/
+    margin-top:2.3333em;   /*70px/30px*/
+    margin-left:0.375em;   /*6px/16px*/
+    border:0 solid transparent;
+}
+
+/* 四个图标 ~ “查找新世界活动” */
+.two{
+    background:url(images/看地图.png) no-repeat;
+    background-size:100% 100%;
+    height:59.4375em;    /*951px/16px*/
+    width:100%;
+
+}
+
+/* 四个图标 */
+.two_f1{
+    width:100%;
+    height:15.625em;   /*250px/16px*/
+    padding-top:3em;    /*48px/16px*/
+}
+
+.two_f1_1,.two_f1_2,.two_f1_3,.two_f1_4{
+    display:inline-block;
+    width:24.5%;
+    text-align:center;
+
+}
+
+.two_f1_1_txt,.two_f1_2_txt,.two_f1_3_txt,.two_f1_4_txt{
+    font:0.875em "黑体";    /* 14px/16px*/
+    color:#666;
+    height:3.5714em;       /* 50px/14px*/
+    vertical-align: top;
+    border-right:1px solid #666;
+    margin-top:3.4286em;   /* 48px/14px*/
+}
+
+.two_f1_4_txt{
+    border-right:none;
+}
+
+/* 关于新世界，你不知道的还有什么？ */
+.two_f2{
+    width:100%;
+    height:22.5em;   /*360px/16px*/
+    background:url(images/第三栏bj.png);
+    background-size: 100% 100%;
+    text-align:center;
+
+}
+
+.two_f2 img{
+    margin-top:5.25em;   /* 84px/16px */
+    margin-bottom:3em;   /* 48px/16px */
+
+}
+
+.two_f2_txt{
+    font:3.3494em "黑体";   /* 53.59px/16px */
+    color:darkgray;
+}
+
+/* 查找新世界城市活动信息 */
+ .two_f3{
+    width:100%;
+    height:21.3125em;   /*341px/16px*/
+    background:url(images/地图遮罩.png) no-repeat;
+     background-size:100% 100%;
+    text-align:center;
+    padding-top:3em;       /* 48px/16px */
+}
+
+.two_f3 hr{
+    width:2em;        /* 32px/16px */
+    height:0.25em;        /* 3px/16px */
+    background-color:white;
+}
+
+.two_f3_d1{
+    font:1.3125em "微软雅黑";    /* 21px/16px */
+    color:#fff;
+}
+
+.two_f3_d2{
+     font:0.75em "微软雅黑";   /* 12px/16px */
+     color:#fff;
+     margin-top:1.5em;       /* 18px/12px */
+ }
+
+.two_f3_d3{
+    margin-top:2.5em;       /* 40px/16px */
+}
+
+/* form组合（可选项） */
+.two_f3 form{
+    margin-top:3em;       /* 48px/16px */
+}
+
+/* form组合（可选项） */
+.two_f3_d3 form,.two_f3_d3 button{
+    display:inline-block;
+}
+
+/* form组合（可选项） */
+.two_f3_d3 form select{
+    width:19.6667em;     /* 236px/12px */
+    height:3em;       /* 36px/12px */
+    font:0.75em "微软雅黑";   /* 12px/16px */
+    margin-left:2.1875em;    /* 35px/16px */
+    background:lightgray;
+}
+
+/* 搜索按钮 */
+.two_f3_d3 #search{
+    font:bold 0.875em "微软雅黑";   /* 14px/16px */
+    width:16.8571em;    /* 236px/14px */
+    height:2.5714em;   /* 36px/14px */
+    color:#fff;
+    background:url(images/城市搜索bj.png);
+    border:0 solid transparent;
+    margin-left:1.625em;    /* 26px/16px */
+
+}
+
+.two_f3_d3_t1,.two_f3_d3_t2,.two_f3_d3_t3{
+    display:inline-block;
+    vertical-align: top;
+    margin-left:1.625em;    /* 26px/16px */
+
+}
+
+.two_f3_d3 .Country,.two_f3 .Province,.two_f3 .City{
+    display:flex;
+    justify-content: space-between;
+    background:#fff;
+    width:14.75em;    /* 236px/16px */
+    height:2.25em;   /* 36px/16px */
+    padding-left:0.75em;      /* 12px/16px */
+    padding-right:0.75em;      /* 12px/16px */
+
+}
+
+.two_f3_d3 .t_first{
+    font:0.75em "微软雅黑";  /* 12px/16px */
+    margin-top:1em;
+    color:#A8A9AA;
+
+}
+
+.two_f3_d3 .list_img{
+    background:#BE4E48;
+    width:1.125em;   /* 18px/16px */
+    height:1.125em;  /* 18px/16px */
+    text-align:center;
+    margin-top:0.5625em;  /* 9px/16px */
+}
+
+.list_img img{
+    margin-bottom:0.25em;   /* 4px/16px */
+}
+
+.two_f3_d3 .lists{
+    padding:0;
+    width:14.75em;    /* 236px/16px */
+    list-style: none;
+    background: #E3E3E4;
+    margin-top:0;
+    border-top:none;
+}
+
+.two_f3 .lists li{
+    padding-left:0.75em;  /* 12px/16px */
+    height:1.875em;     /* 30px/16px */
+    display:none;
+
+}
+
+.two_f3_d3 .lists li a {
+    display:flex;
+    justify-content: flex-start;
+    font:0.75em "微软雅黑"; /* 12px/16px */
+    padding-top:0.75em;     /* 9px/12px */
+
+}
+
+.two_f3_d3 .lists li a i{
+    background:url(images/下拉框部件.png) no-repeat center center;
+    width:1.125em;   /* 18px/16px */
+    height:1.125em;  /* 18px/16px */
+}
+
+.two_f3_d3 .lists li a span{
+    padding-left:1em;
+}
+
+.two_f3_d3 .lists > li:hover{
+    background:#BE4E48;
+}
+
+.two_f3_d3 .lists:hover{
+    border:0.0625em solid #BE4E48;   /* 1px/16px */
+}
+
+.two_f3_d3 .lists:hover li{
+    display:block;
+}
+
+.two_f3_d3 .Country:hover, .two_f3_d3 .Province:hover,.two_f3_d3 .City:hover{
+    border:0.0625em solid #BE4E48;   /* 1px/16px */
+}
+
+.two_f3_d3 .Country:hover + .lists{
+    border:0.0625em solid #BE4E48;   /* 1px/16px */
+}
+
+.two_f3_d3 .Province:hover + .lists{
+    border:0.0625em solid #BE4E48;   /* 1px/16px */
+}
+
+.two_f3_d3 .City:hover + .lists{
+    border:0.0625em solid #BE4E48;   /* 1px/16px */
+}
+
+.two_f3_d3 .Country:hover + .lists > li{
+    display:block;
+}
+
+.two_f3_d3 .Province:hover + .lists > li{
+    display:block;
+}
+
+.two_f3_d3 .City:hover + .lists > li{
+    display:block;
+}
+
+/* 北京、上海、深圳、香港活动 */
+.three{
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:39.4375em;    /* 631px/16px */
+    background:#f7f7f7;
+ }
+
+.three figure{
+    /* 发现左边margin值为0，右边margin就可以设置两图之间你想要的任何间距，
+        若把margin-left取消，两图之间的间距就不受控制，不能完成你想要的间距。
+        或者右边的margin设置为0，左边margin设置你需要的数值也可以。
+        以上是自己瞎试捣试出来的，具体为什么会这样的原因不清楚
+     */
+    margin-left:0;
+    margin-right:2.375em;/* 35px/16px */
+    text-align:center;
+}
+
+.three figure img{
+    border-top:0.75em solid #fff;      /* 12px/16px */
+    border-bottom:0.825em solid #fff;  /* 13px/16px */
+    border-left:0.375em solid #fff;    /* 6px/16px */
+    border-right:0.375em solid #fff;   /* 6px/16px */
+}
+
+.three figure .activity_title{
+    font:0.875em "微软雅黑";     /* 14px/16px */
+    opacity: 0.8;
+}
+
+.three figure .activity_content{
+    font:0.75em "微软雅黑";  /* 12px/16px */
+    color:gray;
+    opacity: 0.8;
+}
+
+.three .activity_special{
+    font:1.375em "微软雅黑";
+    opacity: 0.8;
+ }
+
+.three .img_special{
+    margin-top:-0.5em;
+}
+
+/* “新世界TIME @新世界 - 北京”块设置 */
+.four{
+    width:100%;
+    height:35.3125em;   /* 565px/16px */
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.four_left{
+    width:66.67%;    /*53.1875em; /* 851px/16px */
+    height:35.3125em;   /* 565px/16px */
+    background:url(images/time2.jpg) no-repeat;
+    background-size:100% 100%;
+}
+
+.four_left .triangle1{
+    border-top:0.875em solid transparent;   /* 14px/16px */
+    border-bottom:0.875em solid transparent;   /* 14px/16px */
+    border-right:1.5625em solid #fff;     /* 25px/16px */
+    margin-top:31%;    /*  父元素宽度的31%，即 53.1875em *31% */
+}
+
+.four_right{
+    height:35.3125em;   /* 565px/16px */
+    text-align:center;
+    padding-left:4.625em;  /* 25px/16px */
+    padding-top:10em;  /* 160px/16px */
+
+}
+
+.four_right_txt p{
+    font:0.75em "宋体";   /* 12px/16px */
+    color:#aaa;
+    opacity:0.8;
+    margin-top:2em;   /* 24px/10px */
+    line-height:2.5em;  /* 30px/10px */
+}
+
+.four_right_txt p span{
+    padding-right:8em;  /* 80px/10px */
+}
+
+.four_right button{
+    font:0.75em "微软雅黑";   /* 12px/16px */
+    margin-top:2.5em;    /* 30px/12px */
+    width:9em;         /* 96px/12px */
+    height:3em;     /* 36px/12px */
+    border:1px solid #e25c60;
+    background:#fff;
+    color:#e25c60;
+}
+
+.four_right_dots .dot{
+    display:inline-block;
+    width:0.6875em;    /*  10px/16px */
+    height:0.6875em;    /*  10px/16px */
+    border:1px solid #afafaf;
+    -webkit-border-radius: 50%;
+    margin:1.6875em 0.375em;  /*  1.6875em = 27px/16px, 0.375em = 6px/16px */
+}
+
+.four_right_dots .dot:first-child{
+    background:#afafaf ;
+}
+
+/* 新时代关于爱生活 */
+.five{
+    width:100%;
+    height:32em;    /*  521px/16px */
+}
+
+.five ul{
+    margin:0;
+    padding:0;
+}
+
+.five_1,.five_2,.five_3{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    width:33.33%;
+}
+
+.five_1{
+    /*width:26.5625em;   /*  425px/16px */
+    height:32em;    /*  521px/16px */
+    background:#ff6666;
+    text-align:center;
+}
+
+.five_1 p{
+    font:1.3125em "黑体";  /*  21px/16px */
+    color:#fff;
+    line-height: 1.5em;   /* 24px/16px */
+}
+
+.five_1 hr{
+    width:2em;     /*  32px/16px */
+    height: 0.125em;  /*  2px/16px */
+    background:#fff;
+    border:none;
+    margin-top:-0.125em;   /*  -2px/16px */
+}
+
+.five_1 button{
+    font:1.3125em "黑体";  /*  21px/16px */
+    color:#fff;
+    width:8.0952em;    /*  170px/21px */
+    height:2.1905em;   /*  46px/21px */
+    background:#ff6666;
+    border:0.0476em solid #fff;   /*  1px/21px */
+    margin-top:0.8571em;   /* 18px/21px */
+}
+
+.five_2{
+   /* width:26.5625em;   /* 425px/16px */
+    height:32em;    /*  521px/16px */
+    text-align:center;
+}
+
+.five_2 p{
+    font:1.3125em "黑体";  /*  21px/16px */
+    line-height: 1.5em;   /* 24px/16px */
+    color:#333;
+}
+
+.five_2 hr{
+    width:2em;     /*  32px/16px */
+    height: 0.125em;  /*  2px/16px */
+    background:#afafaf;
+    border:none;
+    margin-top:-0.125em;   /*  -2px/16px */
+}
+
+.five_2 button{
+    font:1.3125em "黑体";  /*  21px/16px */
+    color:#ff6666;
+    width:8.0952em;    /*  170px/21px */
+    height:2.1905em;   /*  46px/21px */
+    background:#fff;
+    border:0.0476em solid #ff6666;   /*  1px/21px */
+    margin-top:0.8571em;   /* 18px/21px */
+}
+
+.five_3{
+    /*width:26.875em;    /*  430px/16px */
+    height:32em;    /*  521px/16px */
+    background:url(images/Woman2.jpg) no-repeat;
+    background-size:100% 100%;
+    align-items: flex-start;
+}
+
+.five_3 .triangle2{
+    border-top:0.875em solid transparent;   /* 14px/16px */
+    border-bottom:0.875em solid transparent;   /* 14px/16px */
+    border-left:1.5625em solid #fff;     /* 25px/16px */
+}
+
+/* “成为我们的志愿者”块设置 */
+.six{
+    width:100%;
+    padding-top:7.1875em;    /* 115px/16px */
+    padding-bottom:9.0625em;    /* 145px/16px */
+    text-align: center;
+}
+
+.six_1f .six_1f_title{
+    font:1.3125em "黑体";   /* 21px/16px */
+    color:#323333;
+    margin-bottom:0.3810em;   /* 8px/21px */
+}
+
+.six_1f hr{
+    width:1.875em;    /* 30px/16px */
+    height:0.125em;   /* 2px/16px */
+    background:#eb6664;
+    border:none;
+}
+
+.six_1f .six_1f_txt{
+    font: 0.75em/1.5em "微软雅黑";   /* 0.75em = 12px/16px;  1.5em = 24px/16px; */
+    color:#aaa;
+    margin-bottom:0.3810em;   /* 8px/21px */
+}
+
+.six_2f{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    margin-top:5em;  /* 80px/16px */
+}
+
+.six_2f_left{
+    width:18.125em;  /* 290px/16px */
+    opacity:0.9;
+    margin-right:5em;  /* 80px/16px */
+    text-align: left;
+
+}
+
+.six_2f_left h5{
+    font:0.875em "黑体";
+    color:#000;
+}
+
+.six_2f_left p{
+    font:0.75em "宋体";  /* 12px/16px */
+    line-height:1.75em;   /* 21px/12px */
+    color:#aaa;
+}
+
+.six_2f_left .unfold{
+    font:0.75em "宋体";  /* 12px/16px */
+    color:#aaa;
+    text-align:right;
+}
+
+.six_2f_left .six_2f_L3 h5{
+    margin-bottom:1.25em;  /* 20px/16px */
+}
+
+.six_2f form{
+    text-align: left;
+}
+.six_2f form input[placeholder]{
+    font:0.75em "宋体";   /* 12px/16px */
+    color:#231815;
+    opacity:0.7;
+}
+
+.six_2f form input{
+    width:25.8333em;   /* 310px/12px */
+    height:3.3333em;   /* 40px/12px */
+    background:#ececee;
+    padding-left:1.6667em;  /* 20px/12px */
+    margin-right:1.3333em; /* 16px/12px */
+    margin-bottom:1.25em;    /* 15px/12px */
+    border:none;
+
+}
+
+.six_2f form textarea{
+    font:0.75em "宋体";   /* 12px/16px */
+    color: rgba(35,24,21,.6);
+    width:53.3333em;   /* 640px/12px */
+    height:10em;   /* 120px/12px */
+    background:#ececee;
+    padding-left:1.6667em;  /* 20px/12px */
+    margin-bottom:1.25em;    /* 15px/12px */
+    border:none;
+    resize: none;
+
+}
+
+.six_2f form button{
+    font:0.875em "黑体";   /* 14px/16px */
+    color:#323333;
+    width: 45.7143em;   /* 640px/14px */
+    height:2.8571em;   /* 40px/14px */
+    background:#ececee;
+    border:none;
+}
+
+/* “联系我们”块设置 */
+.footer_contact{
+    width:100%;
+    height:22.125em;   /* 355px/16px */
+    background:#32353e;
+    text-align:center;
+    padding-top:3.75em;   /* 60px/16px */
+
+}
+
+.footer_contact h4{
+    font: 1.3125em "黑体";  /* 21px/16px */
+    color:#fff;
+    margin-bottom:0;
+
+}
+
+.footer_contact p{
+    font: 0.75em/1.5em "宋体";  /* 12px/16px */
+    color:#fff;
+    opacity:0.8;
+}
+
+.footer_email{
+    display:flex;
+    justify-content: center;
+    margin-top:1.875em;   /* 30px/16px */
+    margin-bottom:2.5em;   /* 40px/16px */
+
+}
+
+.footer_email input[placeholder]{
+    font:0.875em "微软雅黑";       /* 14px/16px */
+    color:#aaa;
+
+}
+
+.footer_email input{
+    width:31.1429em;     /* 436px/14px */
+    height:2.8571em;     /* 40x/14px */
+    background:#fff;
+    border:none;
+    padding-left:0.7143em;  /* 10x/14px */
+
+}
+
+.footer_email button{
+    font:0.9375em "微软雅黑";   /* 15px/16px */
+    color:#fff;
+    width:5.3333em;     /* 80px/15px */
+    height:2.6667em;     /* 40x/15px */
+    background:#6f7178;
+    border:none;
+
+}
+
+.footer_icons ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.footer_icons ul li{
+    display:inline-block;
+    margin-right:1.5em;    /* 24x/16px */
+}
+
+/* 页脚最低部设置 */
+.footer_backtotop{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    height:3.625em;     /* 58x/16px */
+    background:#2f2f38;
+    padding:1.5625em 2.5em 1.3125em 6.25em;
+}
+
+.footer_backtotop a{
+    font:0.75em "宋体";
+    color:#fff;
+    opacity: 0.9;
+    text-decoration:none;
+}
